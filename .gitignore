@@ -1,0 +1,25 @@
+# Audio Data (Private)
+test_results/
+*.wav
+*.mp3
+*.flac
+
+# Neural Network Models
+*.pt
+
+# Python Environment
+__pycache__/
+.venv/
+.env
+*.log
+
+# Project Management
+.gemini/
+.agent/
+brain/
+node_modules/
+dist/
+build/
+.DS_Store
+.vscode/
+.idea/
