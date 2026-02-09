@@ -68,8 +68,8 @@ DCCRN doesn't just "guess" what a clean voice sounds like. It creates a **Mask**
 | :--- | :--- | :--- |
 | **Learning** | Math-based adjustments. | Pattern-based prediction. |
 | **Speed** | Instant. | High (but needs a GPU/CPU boost). |
-| **Steady Noise** | ✅ Excellent. | ✅ Excellent. |
-| **Sudden Noise** | ❌ Fails (too slow to adapt). | ✅ Handles (knows a 'bark' isn't a 'voice'). |
+| **Steady Noise** | Excellent. | Excellent. |
+| **Sudden Noise** | Fails (too slow to adapt). | Handles (knows a 'bark' isn't a 'voice'). |
 | **Intelligence** | Reactive. | Proactive. |
 
 ---
@@ -86,7 +86,7 @@ If you are coming from the **FxLMS** project, you might be looking for the "Anti
 | :--- | :--- | :--- |
 | **Mechanism** | **Physical Cancellation**: Play a "negative" sound through a speaker to destroy noise in the air. | **Digital Erasing**: Modify the 0s and 1s of the audio data in memory to remove noise. |
 | **Goal** | Silence in a physical room. | High-quality audio for a recording or a Zoom call. |
-| **Sudden Noise** | ❌ Fails. The math can't "anticipate" a sudden dog bark. | ✅ Succeeds. The AI "recognizes" the shape of a bark and mutes it instantly. |
+| **Sudden Noise** | Fails. The math can't "anticipate" a sudden dog bark. | Succeeds. The AI "recognizes" the shape of a bark and mutes it instantly. |
 
 ### How it "sees" a bark:
 DCCRN handles sudden noise (like a dog barking or a glass breaking) because it has seen it before during training. 

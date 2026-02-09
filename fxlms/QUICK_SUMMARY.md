@@ -1,8 +1,8 @@
 # Quick Summary: Enhanced vs Optimized FxLMS Versions
 
-## 🔑 Key Differences in 3 Points:
+## Key Differences in 3 Points:
 
-### 1. **Learning Speed** ⚡
+### 1. **Learning Speed**
 - **Enhanced**: Learning rate = `0.00005` (VERY SLOW - takes minutes to adapt)
 - **Optimized**: Learning rate = `0.001` (20x FASTER - adapts in 3-5 seconds)
 
@@ -10,7 +10,7 @@
 
 ---
 
-### 2. **Filter Capacity** 🎛️
+### 2. **Filter Capacity**
 - **Enhanced**: 256 taps, simple 3-tap secondary path
 - **Optimized**: 512 taps, realistic 20-tap secondary path
 
@@ -18,7 +18,7 @@
 
 ---
 
-### 3. **Output Quality** 🎧
+### 3. **Output Quality**
 - **Enhanced Anti-Noise**: Very weak/muffled (barely audible)
 - **Optimized Anti-Noise**: Strong and clear (easily audible)
 
@@ -27,20 +27,20 @@
 
 ---
 
-## 📊 Quick Comparison Table
+## Quick Comparison Table
 
 | Feature | Enhanced | Optimized | Winner |
 |---------|----------|-----------|--------|
-| Adaptation Speed | Minutes | 3-5 seconds | ✅ Optimized |
-| Anti-Noise Strength | ~1% of input | ~10-30% of input | ✅ Optimized |
-| Noise Reduction | Minimal/None | Moderate | ✅ Optimized |
-| Stability | Can diverge | Protected | ✅ Optimized |
-| Performance Tracking | None | Real-time dB | ✅ Optimized |
-| Plot Complexity | 3 basic plots | 6 detailed plots | ✅ Optimized |
+| Adaptation Speed | Minutes | 3-5 seconds | Optimized |
+| Anti-Noise Strength | ~1% of input | ~10-30% of input | Optimized |
+| Noise Reduction | Minimal/None | Moderate | Optimized |
+| Stability | Can diverge | Protected | Optimized |
+| Performance Tracking | None | Real-time dB | Optimized |
+| Plot Complexity | 3 basic plots | 6 detailed plots | Optimized |
 
 ---
 
-## 🎯 What You Should Hear in the Audio Files:
+## What You Should Hear in the Audio Files:
 
 ### Enhanced Version Files:
 ```
@@ -64,7 +64,7 @@ error_processed_*.wav   ← Should sound CLEANER than input (reduced noise)
 
 ---
 
-## 🔬 Why the Difference?
+## Why the Difference?
 
 ### Enhanced Version Problem:
 ```python
@@ -84,7 +84,7 @@ mu = 0.001  # 20x larger!
 
 ---
 
-## 🎵 The "Muffled" Anti-Noise Explained
+## The "Muffled" Anti-Noise Explained
 
 You mentioned the anti-noise signal looks "muffled" in the enhanced version. Here's why:
 
@@ -107,7 +107,7 @@ You mentioned the anti-noise signal looks "muffled" in the enhanced version. Her
 
 ---
 
-## 📈 Expected Performance
+## Expected Performance
 
 ### Enhanced Version:
 ```
@@ -115,7 +115,7 @@ Noise Reduction: ~0 dB (or slightly negative)
 Anti-Noise Strength: 1-5% of input amplitude
 Reduction Ratio: 0-10%
 ```
-❌ Basically doesn't work
+Basically doesn't work
 
 ### Optimized Version (with good steady noise):
 ```
@@ -123,11 +123,11 @@ Noise Reduction: 5-15 dB (positive!)
 Anti-Noise Strength: 20-50% of input amplitude
 Reduction Ratio: 40-70%
 ```
-✅ Actually provides meaningful noise cancellation
+Actually provides meaningful noise cancellation
 
 ---
 
-## 🎓 Bottom Line:
+## Bottom Line:
 
 **Enhanced Version** = Demonstrates the problem
 - Parameters are intentionally poor
@@ -146,11 +146,11 @@ Reduction Ratio: 40-70%
 
 ---
 
-## 🚀 Try This Test:
+## Try This Test:
 
 1. Play white noise or a fan recording
 2. Run optimized version for 30 seconds
 3. Compare `input_original_*.wav` vs `error_processed_*.wav`
 4. You should hear the difference!
 
-With proper steady noise, optimized version can achieve 10-20 dB reduction, which is a 3-10x reduction in perceived loudness! 🎧
+With proper steady noise, optimized version can achieve 10-20 dB reduction, which is a 3-10x reduction in perceived loudness!

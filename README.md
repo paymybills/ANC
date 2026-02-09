@@ -2,7 +2,7 @@
 
 This repository contains two cutting-edge approaches to noise reduction: **Active Noise Cancellation (FxLMS)** for real-time acoustic interference and **Deep Learning Denoising (DCCRN)** for surgical digital audio cleaning.
 
-## 📂 Project Structure
+## Project Structure
 
 ### 1. [FxLMS (Filtered-X Least Mean Squares)](./fxlms/)
 A classic Digital Signal Processing (DSP) approach used in noise-canceling headphones. It targets predictable, tonal noise by generating "anti-noise" phase-inverted signals.
@@ -16,7 +16,7 @@ A state-of-the-art AI model that uses a U-Net style architecture with Complex-va
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### AI Denoising (DCCRN)
 To clean a noisy audio file using the trained model:
@@ -32,7 +32,7 @@ python fxlms/anc.py
 
 ---
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 | Feature | FxLMS (DSP) | DCCRN (AI) |
 | :--- | :--- | :--- |
@@ -43,10 +43,10 @@ python fxlms/anc.py
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 You can find performance plots (Noisy vs. Cleaned) in the respective `plots/` subdirectories. Use `dccrn/plot_performance.py` to generate new analysis for your audio files.
 
 ---
 
-## 🧠 Training (Kaggle)
+## Training (Kaggle)
 The DCCRN model was trained on the **LibriSpeech** and **MUSAN** datasets. A comprehensive [Kaggle Training Guide](./dccrn/KAGGLE_TRAINING_GUIDE.md) is included for those looking to reach higher SI-SNR levels (>20dB).

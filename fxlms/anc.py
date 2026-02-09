@@ -119,9 +119,9 @@ def save_audio():
         else:
             reduction_db = 0
             
-        print(f"\n✓ Saved {duration:.1f}s recording")
-        print(f"✓ Noise Reduction: {reduction_db:.2f} dB")
-        print(f"✓ Files: input_{timestamp}.wav, antinoise_{timestamp}.wav, cleaned_{timestamp}.wav")
+        print(f"\nSaved {duration:.1f}s recording")
+        print(f"Noise Reduction: {reduction_db:.2f} dB")
+        print(f"Files: input_{timestamp}.wav, antinoise_{timestamp}.wav, cleaned_{timestamp}.wav")
 
 try:
     with sd.Stream(channels=1, samplerate=fs, blocksize=frame_len,
@@ -135,5 +135,5 @@ except KeyboardInterrupt:
 finally:
     recording = False
     save_audio()
-    print("\n✓ Done.\n")
+    print("\nDone.\n")
 
